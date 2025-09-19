@@ -1,4 +1,4 @@
-# Space Invaders (Pygame)
+# git (Pygame)
 
 Basit bir Space Invaders tarzı 2D oyun. Uzay gemisi, mermi, düşmanlar; skor ve Game Over ekranı; ses efektleri ve basit animasyonlar içerir.
 
@@ -29,6 +29,14 @@ python main.py
 - Sağ/Yön veya `D`: Sağa hareket
 - `Space`: Ateş et
 - Game Over sonrası `Enter`: Yeniden başlat
+- Menü:
+  - `Enter`: Başla
+  - `S`: Ayarlar
+  - `Esc`: Çıkış
+- Ayarlar:
+  - `1/2/3`: Zorluk (Kolay/Normal/Zor)
+  - `Sol/Sağ`: SFX ses ayarı
+  - `Esc`: Menüye dön
 
 ## Assets Dizini
 
@@ -57,6 +65,7 @@ assets/
 - `entities.py`: Oyuncu, mermi, düşman formasyonu, çarpışmalar
 - `effects.py`: Patlama animasyonu
 - `game.py`: Oyun döngüsü, skor, game over, çizimler
+- Menü ve Ayarlar ekranları: `game.py` içinde durum (state) bazlı yönetim
 - `main.py`: Giriş noktası
 
 Not: Ses aygıtı yoksa oyun sessiz çalışabilir; görseller yoksa otomatik çizimler kullanılır.

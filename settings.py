@@ -36,3 +36,22 @@ SOUNDS_DIR = f"{ASSETS_DIR}/sounds"
 # Window
 WINDOW_TITLE = "Space Invaders - Pygame"
 
+# Audio
+DEFAULT_SFX_VOLUME = 0.6  # 0.0 - 1.0
+
+# Difficulty presets (multipliers)
+DIFFICULTY_PRESETS = {
+    "Kolay": {
+        "enemy_move_interval_ms": int(ENEMY_MOVE_INTERVAL_MS * 1.3),
+        "enemy_shoot_chance": ENEMY_SHOOT_CHANCE * 0.6,
+    },
+    "Normal": {
+        "enemy_move_interval_ms": ENEMY_MOVE_INTERVAL_MS,
+        "enemy_shoot_chance": ENEMY_SHOOT_CHANCE,
+    },
+    "Zor": {
+        "enemy_move_interval_ms": int(ENEMY_MOVE_INTERVAL_MS * 0.8),
+        "enemy_shoot_chance": ENEMY_SHOOT_CHANCE * 1.5,
+    },
+}
+
